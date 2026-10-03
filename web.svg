@@ -1,0 +1,16 @@
+<div style="position: fixed; bottom: 0; right: 0; width: 160px; height: 160px; pointer-events: none; z-index: 999;">
+  <svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <!-- Anchor struts -->
+    <line x1="200" y1="200" x2="200" y2="10" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9" />
+    <line x1="200" y1="200" x2="10" y2="200" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9" />
+    <line x1="200" y1="200" x2="50" y2="50" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9" />
+    <line x1="200" y1="200" x2="10" y2="110" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9" />
+    <line x1="200" y1="200" x2="110" y2="10" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9" />
+
+    <!-- Web rings -->
+    <path d="M 200 130 Q 165 130 130 200" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.9" />
+    <path d="M 200 90 Q 145 90 90 200" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.9" />
+    <path d="M 200 50 Q 125 50 50 200" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.9" />
+    <path d="M 150 10 Q 80 80 10 150" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.9" />
+  </svg>
+</div>

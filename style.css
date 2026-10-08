@@ -1,8 +1,9 @@
 html {
-  background-color: #BBBBFF;
+  background-color: #CCCCFF;
   /*Original: BBBBFF*/
   color: #01AA01;
   /*Original: 01AA01*/
+  font-display: optional;
 }
 
 a:link {
@@ -55,3 +56,6 @@ body {
   margin: 0 15px;
 }
 
+.breakthis {
+  display: block;
+}

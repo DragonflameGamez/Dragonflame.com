@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="UTF=8">
     <title>Dragonflame</title>
     <link rel="stylesheet" href="./style.css">
@@ -9,13 +10,14 @@
     <meta property="og:description" content="I learned how to code so we have a website for my channel now--YIPPEE">
     <meta property="og:image" content="https://dragonflame.netlify.app/Profile.jpg">
     <link rel="icon" href="./Profile.jpg" type="image/jpeg">
+    <meta name="description" content="I learned how to code so we have a website for my channel now--YIPPEE">
   </head>
   <body>
     <nav class="header-div">
-      <p><a href="#about">About me</a><a href="#form">Forms</a> <a href="#shout">Shoutout</a> <a href="./watch.html">Watch</a> <img src="./pumpkin.svg" alt="A silly pumpkin SVG"></p>
+      <p><a href="#about">About me</a><a href="#form">Forms</a> <a href="#shout">Shoutout</a> <a href="./watch.html">Watch</a> <img src="./pumpkin.svg" alt="A silly pumpkin SVG" width="50" height="50"></p>
     </nav>
-    <div id="main">
-      <h1><img src="./Profile.jpg"> Hello internet, I'm <a href="https://youtube.com/@dragonflamegamez">Dragonflame</a></h1>
+    <main>
+      <h1><img src="./Profile.jpg" alt="Stylized initials of DF" width="132" height="132"> Hello internet, I'm <a href="https://youtube.com/@dragonflamegamez">Dragonflame</a></h1>
 
       <section class="wdid" id="about">
 
@@ -29,12 +31,19 @@
       <fieldset class="box" id="form">
         <legend class="engaged-legend">How have you engaged with my channel?</legend>
         <form action="mailto:loganereman2013@gmail.com" method="post" enctype="text/plain">
-          <input type="checkbox" name="Watched some videos" value="1">I have watched some videos<br>
-          <input type="checkbox" name="Commented" value="1">I have commented<br>
-          <input type="checkbox" name="Liked" value="1">I have liked a video<br>
-          <input type="checkbox" name="Seen channel" value="1">I have seen your channel<br>
-          <input type="checkbox" name="Posted for community" value="1">I have made a post for the community<br>
-          <input type="checkbox" name="Subscribed" value="1">I subscribed<br>
+          
+          <label for="f1" class="breakthis">have watched some videos</label>
+          <input type="checkbox" name="Watched some videos" value="1" id="f1">
+          <label for="f2" class="breakthis">have commented</label>
+          <input type="checkbox" name="Commented" value="1" id="f2">
+          <label for="f3" class="breakthis">have liked a video</label>
+          <input type="checkbox" name="Liked" value="1" id="f3">
+          <label for="f4" class="breakthis">have seen your channel</label>
+          <input type="checkbox" name="Seen channel" value="1" id="f4">
+          <label for="f5" class="breakthis">have made a post for the community</label>
+          <input type="checkbox" name="Posted for community" value="1" id="f5">
+          <label for="f6" class="breakthis">subscribed</label>
+          <input type="checkbox" name="Subscribed" value="1" id="f6">
           <button type="submit" id="submit" class="Button">
           <label for="submit">Submit form via email</label>
         </form>
@@ -49,11 +58,11 @@
 
       <section class="box" id="shout">
         <h2>Go check out these honorable mentions</h2>
-        <p class="Big"><img src="./Bell.jpg" height="20"><a href="https://youtube.com/@bellbeasthollowknight">Bell Beast Hollow Knight</a> on youtube collaborated with my channel</p>
-        <p class="Big"><img src="./icey.webp" height="20"><a href="https://www.youtube.com/channel/UClAYNzR9obIhzxEHhS5_fcA">IceyVR</a>on youtube for witing some code for the website</p>
+        <p class="Big"><img src="./Bell.jpg" height="20" width="20" alt="Bell Beast from the game Silk Song"><a href="https://youtube.com/@bellbeasthollowknight">Bell Beast Hollow Knight</a> on youtube collaborated with my channel</p>
+        <p class="Big"><img src="./icey.webp" height="20" width="20" alt="Shoutout Profile picture"><a href="https://www.youtube.com/channel/UClAYNzR9obIhzxEHhS5_fcA">IceyVR</a>on youtube for witing some code for the website</p>
       </section>
-    </div>
-    <iframe src="https://www.youtube.com/embed/videoseries?list=UULFNNibeUnDLKCc7oOPMulorQ&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </main>
+    <iframe title="All of my videos" src="https://www.youtube.com/embed/videoseries?list=UULFNNibeUnDLKCc7oOPMulorQ&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
     </iframe>
   </body>

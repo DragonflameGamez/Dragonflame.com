@@ -64,3 +64,24 @@ body {
   width: 500px;
   height: 10px;
 }
+
+.lore-img {
+  /* 1. Define your base variable as 0 (not zoomed) */
+  --zoom: 0;
+  
+  /* 2. Math out your scale: 1 (normal size) plus your zoom multiplier times how big you want it (e.g., scale 2) */
+  transform: scale(calc(1 + (var(--zoom) * 1))); 
+  
+  transition: transform 0.2s ease;
+  cursor: zoom-in;
+}
+
+/* When the image is clicked/focused, flip the variable switch to 1 */
+.lore-img:focus {
+  --zoom: 1;
+  cursor: zoom-out;
+  outline: none;
+  position: relative;
+  z-index: 100;
+  transform-origin: top left;
+}

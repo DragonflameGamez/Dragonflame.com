@@ -14,10 +14,28 @@
   </head>
   <body>
     <nav class="header-div">
-      <p><a href="#about">About me</a><a href="#form">Forms</a> <a href="#shout">Shoutout</a> <a href="./watch.html">Watch</a> <img src="./pumpkin.svg" alt="A silly pumpkin SVG" width="50" height="50"></p>
+      <p> <button onclick="document.getElementById('Accessibility').showModal()">Accessibility</button> <button onclick="document.getElementById('Goto').showModal()">Navigation</button> <img src="./pumpkin.svg" alt="" width="50" height="50" aria-hidden="true"></p>
     </nav>
     <main>
-      <h1><img src="./Profile.jpg" alt="Stylized initials of DF" width="132" height="132"> Hello internet, I'm <a href="https://youtube.com/@dragonflamegamez">Dragonflame</a></h1>
+      <dialog id="Goto">
+        <h3>Navigation</h3>
+        <a href="#about">About me</a>
+        <a href="#form">Forms</a>
+        <a href="#shout">Shoutout</a>
+        <a href="./watch.html">Watch</a>
+        <a href="#">Home</a>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+      <dialog id="Accessibility">
+        <h3>Accessibility</h3>
+        <p>Sorry, no accessibility toggles yet, come back soon.</p>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+      <h1><img src="./Profile.jpg" alt="Stylized initials of DF" width="132" height="132" aria-hidden="true"> Hello internet, I'm <a href="https://youtube.com/@dragonflamegamez">Dragonflame</a></h1>
 
       <section class="wdid" id="about">
 
@@ -58,8 +76,8 @@
 
       <section class="box" id="shout">
         <h2>Go check out these honorable mentions</h2>
-        <p class="Big"><img src="./Bell.jpg" height="20" width="20" alt="Bell Beast from the game Silk Song"><a href="https://youtube.com/@bellbeasthollowknight">Bell Beast Hollow Knight</a> on youtube collaborated with my channel</p>
-        <p class="Big"><img src="./icey.webp" height="20" width="20" alt="Shoutout Profile picture"><a href="https://www.youtube.com/channel/UClAYNzR9obIhzxEHhS5_fcA">IceyVR</a>on youtube for witing some code for the website</p>
+        <p class="Big"><img src="./Bell.jpg" height="20" width="20" alt="Bell Beast from the game Silk Song"><a href="https://youtube.com/@bellbeasthollowknight" aria-hidden="true">Bell Beast Hollow Knight</a> on youtube collaborated with my channel</p>
+        <p class="Big"><img src="./icey.webp" height="20" width="20" alt="Shoutout Profile picture"><a href="https://www.youtube.com/channel/UClAYNzR9obIhzxEHhS5_fcA" aria-hidden="true">IceyVR</a>on youtube for witing some code for the website</p>
       </section>
     </main>
     <iframe title="All of my videos" src="https://www.youtube.com/embed/videoseries?list=UULFNNibeUnDLKCc7oOPMulorQ&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -70,4 +88,5 @@
     <p><ruby>That's all for now <rt>Scripting coming soon</rt></ruby></p>
     <p>Take me to the <a href="#">Top</a></p>
   </footer>
+  <a class="hidden_box" href="./guy1.html" aria-label="Bottom of page"><div class="hidden_box"></div></a>
 </html>

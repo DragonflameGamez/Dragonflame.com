@@ -85,3 +85,7 @@ body {
   z-index: 100;
   transform-origin: top left;
 }
+
+.rightshift {
+  align-content: end;
+}

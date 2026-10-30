@@ -94,3 +94,6 @@ iframe {
   font-size: small;
   color: #555555;
 }
+iframe {
+  border: none;
+}
